@@ -1,8 +1,7 @@
 Analiza produktów o niskiej częstotliwości zamówień  Ogólnodostępnej bazy danych (Northwind)
 
 Cel analizy
-Celem tego zapytania było znalezienie produktów, które sprzedają się rzadziej niż średnia liczba zamówień wszystkich produktów,  
-a następnie zidentyfikowanie klientów, którzy je kupują.
+Celem tego zapytania było znalezienie produktów, które sprzedają się rzadziej niż średnia liczba zamówień wszystkich produktów, a następnie zidentyfikowanie klientów, którzy je kupują.
 
 Opis rozwiązania
 W zapytaniu wykorzystano tabele:
