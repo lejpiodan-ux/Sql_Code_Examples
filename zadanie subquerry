@@ -1,0 +1,24 @@
+# 🧮 Analiza średnich cen produktów według kategorii (Northwind)
+
+### 🎯 Cel zadania
+Celem zapytania jest analiza średnich cen produktów w poszczególnych kategoriach oraz porównanie ich do ogólnej średniej wszystkich produktów w bazie **Northwind**.  
+Dodatkowo, każda kategoria została przypisana do jednej z trzech grup cenowych na podstawie średniej wartości produktów:
+- **Expensive** – gdy średnia cena > 50  
+- **Normal** – gdy średnia cena > 30  
+- **Cheap** – w pozostałych przypadkach  
+
+---
+
+### 🧱 Wykorzystane tabele
+- `Products`
+- `Categories`
+
+---
+
+### ⚙️ Użyte techniki SQL
+- **JOIN** – połączenie tabel `Products` i `Categories` po `CategoryID`  
+- **AVG()** – funkcja agregująca do obliczenia średnich cen  
+- **GROUP BY** – grupowanie danych po nazwie kategorii  
+- **HAVING z podzapytaniem** – filtracja kategorii droższych od średniej wszystkich produktów  
+- **CASE WHEN** – klasyfikacja kategorii według progu cenowego  
+- **CAST(GETDATE() AS DATE)** – wyświetlenie bieżącej daty w formacie bez czasu  
