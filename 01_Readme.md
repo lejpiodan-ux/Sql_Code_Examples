@@ -14,7 +14,7 @@ Oraz techniki:
 `INNER JOIN `do połączenia danych,
 ` COUNT()` i `AVG()` do obliczeń agregujących,
 podzapytanie  `(subquery) ` w klauzuli HAVING,
-- sortowanie wyników malejąco po liczbie zamówień.
+sortowanie wyników malejąco po liczbie zamówień.
 -` OFFSET` i `FETCH `do paginacji.
   
 Rezultat zapisanego kodu Zapytanie zwraca listę 100 produktów i klientów, którzy kupują towary zamawiane |rzadziej| niż średnia liczba zamówień w całej bazie.
