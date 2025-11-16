@@ -17,7 +17,7 @@ podzapytanie  `(subquery) ` w klauzuli HAVING,
 sortowanie wyników malejąco po liczbie zamówień.
 -` OFFSET` i `FETCH `do paginacji.
   
-Rezultat zapisanego kodu Zapytanie zwraca listę 100 produktów i klientów, którzy kupują towary zamawiane |rzadziej| niż średnia liczba zamówień w całej bazie.
+Rezultat zapisanego kodu Zapytanie zwraca listę 100 produktów i klientów, którzy kupują towary zamawiane rzadziej niż średnia liczba zamówień w całej bazie.
 
 Projekt SQL wykonany jako część portfolio analityka danych.
 Autor: Piotr Leja
