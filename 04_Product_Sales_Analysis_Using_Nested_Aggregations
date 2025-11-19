@@ -1,7 +1,3 @@
--- Wyœwietl listê produktów wraz z:nazw¹ kategorii,nazw¹ dostawcy,³¹czn¹ liczb¹ sprzedanych sztuk,œredni¹ cen¹, po jakiej dany produkt sprzedawano.
--- Zwróæ tylko produkty, które sprzeda³y siê lepiej ni¿ œrednia liczba sprzedanych sztuk poœród wszystkich produktów.
--- Zwrócone rekordy podziel na strony i zwróæ stronê numer 3 przy rozmiarze strony 10.
-
 select
 	p.ProductName,
 	sb1. [Avg Order Value],
