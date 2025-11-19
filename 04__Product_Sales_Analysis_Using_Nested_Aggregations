@@ -1,4 +1,4 @@
-``sql
+```sql
 select
 	p.ProductName,
 	sb1. [Avg Order Value],
@@ -34,4 +34,4 @@ where sb1. [Avg Order Value] > (
 )
 order by sb1. [Avg Order Value] desc
 offset 20 rows fetch next 10rows only 
-``sql
+```sql
