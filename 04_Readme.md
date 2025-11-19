@@ -1,4 +1,4 @@
-Analiza wartości zamówień produktów w bazie danych Northwind
+ Analiza wartości zamówień produktów w bazie danych Northwind
 
 Treść zadania brzmi :
 Wyświetl listę produktów wraz z:
@@ -13,10 +13,10 @@ Zwrócone rekordy podziel na strony i zwróć stronę numer 3 przy rozmiarze str
 
 W zapytaniu wykorzystano tabele:
 
-`Products` 
-`Order Details` 
-`Categories`
-`Suppliers`
+ `Products` 
+ `Order Details` 
+ `Categories`
+-`Suppliers`
 
  Użyte techniki SQL:
 `INNER JOIN`  do łączenia danych między tabelami  
