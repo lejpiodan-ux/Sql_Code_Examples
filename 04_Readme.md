@@ -16,7 +16,7 @@ W zapytaniu wykorzystano tabele:
  `Products` 
  `Order Details` 
  `Categories`
--`Suppliers`
+`Suppliers`
 
  Użyte techniki SQL:
 `INNER JOIN`  do łączenia danych między tabelami  
