@@ -16,3 +16,4 @@ from dbo.[Order Details] ord
 inner join dbo.Orders o 
 	on o.OrderID = ord.OrderID
 group by o.orderid,o.customerid,o.OrderDate
+
