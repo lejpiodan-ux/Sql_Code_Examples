@@ -1,12 +1,12 @@
-/*3. Historia zakupowa klientów
-Przygotuj raport przedstawiaj¹cy chronologiczn¹ sekwencjê zamówieñ ka¿dego klienta wraz z wartoœci¹ tych zamówieñ oraz z informacj¹ jak dane zamówienie odnosi siê do wczeœniejszych i nastêpnych zakupów.*/
+/*3. Historia zakupowa klientÃ³w
+Przygotuj raport przedstawiajÂ¹cy chronologicznÂ¹ sekwencjÃª zamÃ³wieÃ± kaÂ¿dego klienta wraz z wartoÅ“ciÂ¹ tych zamÃ³wieÃ± oraz z informacjÂ¹ jak dane zamÃ³wienie odnosi siÃª do wczeÅ“niejszych i nastÃªpnych zakupÃ³w.*/
 
 SELECT
     CustomerID,
     ROUND(order_total, 1) AS OrderTotal,
     o.OrderDate,
 
-    COALESCE(                                                                               /*Procentowa zmiana w stosunku do poprzedniego zamówienia*/
+    COALESCE(                                                                               /*Procentowa zmiana w stosunku do poprzedniego zamÃ³wienia*/
         CAST(
             ROUND(
                 (order_total - LAG(order_total) 
@@ -19,7 +19,7 @@ SELECT
         'First Order'
     ) AS PercentChangeFromPreviousOrder,	
 
-    COALESCE(																			    /*Procentowa zmiana w stosunku do nastêpnego zamówienia*/	                       
+    COALESCE(																			    /*Procentowa zmiana w stosunku do nastÃªpnego zamÃ³wienia*/	                       
         CAST(
             ROUND(
                 (order_total - LEAD(order_total) 
@@ -32,7 +32,7 @@ SELECT
         'No Next Order'
     ) AS PercentChangeToNextOrder,
 
-    COALESCE(                                                                                       /* Wartoœæ poprzedniego zamówienia*/
+    COALESCE(                                                                                       /* WartoÅ“Ã¦ poprzedniego zamÃ³wienia*/
         CAST(
             LAG(order_total) 
                 OVER (PARTITION BY CustomerID ORDER BY OrderDate ASC) AS VARCHAR
@@ -40,7 +40,7 @@ SELECT
         'First Order'
     ) AS PreviousOrderTotal,
 
-    COALESCE(																						/* Wartoœæ nastêpnego zamówienia*/
+    COALESCE(																						/* WartoÅ“Ã¦ nastÃªpnego zamÃ³wienia*/
         CAST(
             LEAD(order_total) 
                 OVER (PARTITION BY CustomerID ORDER BY OrderDate ASC) AS VARCHAR
@@ -58,3 +58,4 @@ FROM (
 LEFT JOIN dbo.Orders o
     ON order_summary.OrderID = o.OrderID
 ORDER BY CustomerID, o.OrderDate;
+
