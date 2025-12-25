@@ -1,5 +1,5 @@
 /*3. Historia zakupowa klientów
-Przygotuj raport przedstawiaj¹cy chronologiczn¹ sekwencjê zamówieñ ka¿dego klienta wraz z wartoœci¹ tych zamówieñ oraz z informacj¹ jak dane zamówienie odnosi siê do wczeœniejszych i nastêpnych zakupów.*/
+Przygotuj raport przedstawiający chronologiczną sekwencjê zamówieñ ka¿dego klienta wraz z wartoścą tych zamówieñ oraz z informacją jak dane zamówienie odnosi się do wcześniejszych i następnych zakupów.*/
 
 SELECT
     CustomerID,
@@ -32,7 +32,7 @@ SELECT
         'No Next Order'
     ) AS PercentChangeToNextOrder,
 
-    COALESCE(                                                                                       /* Wartoœæ poprzedniego zamówienia*/
+    COALESCE(                                                                                       /* Wartosc poprzedniego zamówienia*/
         CAST(
             LAG(order_total) 
                 OVER (PARTITION BY CustomerID ORDER BY OrderDate ASC) AS VARCHAR
@@ -40,7 +40,7 @@ SELECT
         'First Order'
     ) AS PreviousOrderTotal,
 
-    COALESCE(																						/* Wartoœæ nastêpnego zamówienia*/
+    COALESCE(																						/* Wartość nastêpnego zamówienia*/
         CAST(
             LEAD(order_total) 
                 OVER (PARTITION BY CustomerID ORDER BY OrderDate ASC) AS VARCHAR
@@ -58,4 +58,5 @@ FROM (
 LEFT JOIN dbo.Orders o
     ON order_summary.OrderID = o.OrderID
 ORDER BY CustomerID, o.OrderDate;
+
 
