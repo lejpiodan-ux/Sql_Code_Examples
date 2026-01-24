@@ -18,6 +18,8 @@ In this Query i calculated total values for each order, including discounts. I a
 
 Raport is showing how much money customer spend on order and  what is the difference between this and previous order bought by the same customer.
 
+Writted by Piotr Leja
+
 # Polish
 ## Tytuł
 Analiza zamówień z użyciem funkcji okienkowych z ogólnodostępnej bazy danych Northwind
@@ -34,6 +36,8 @@ W tym zadaniu obliczyłem całkowitą wartość każdego zamówienia po uwzględ
 ## Rezultat
 
 Raport pokazuje, ile pieniędzy wydał klient na dane zamówienie oraz o ile ta kwota różni się od jego poprzednich zakupów.
+
+Projekt SQL wykonany jako cześć portfolio analityka danych. Autor Piotr leja
 
 
 
