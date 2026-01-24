@@ -1,31 +1,3 @@
-# Polish
-## Tytuł
-Historia zakupowa klientów z analizą porównawczą zamówień na podstawe ogólnodostępnej bazie danych "Northwind"
-
-## Opis
-W tym zadaniu przygotowałem raport przedstawiający chronologiczną sekwencję zamówień każdego klienta wraz z wartością zamówień oraz analizą ich zmian w odniesieniu do poprzednich i następnych zakupów.
-
-## Techniki
-##### LAG -  Zwraca łączną wartość poprzedniego zamówienia złożonego przez tego samego klienta
-##### LEAD - Zwraca łączną wartość następnego zamówienia złożonego przez tego samego klienta
-##### COALESCE - Zastępuje wartości "NUL"L zwracane przez funkcje "LAG" i "LEAD"
-##### ROUND - Zaokrągla wartości zwracane przez funkcje "LAG" i "LEAD"
-##### CAST - Umożliwia łączenie wartości liczbowych z etykietami tekstowymi wewnątrz funkcji "COALESCE"
-
-
-## Kolumny
-##### całkowita wartość zamówienia (OrderTotal),
-##### data zamówienia (OrderDate),
-##### procentowa zmiana w stosunku do poprzedniego zamówienia (PercentChangeFromPreviousOrder),
-##### procentowa zmiana w stosunku do następnego zamówienia (PercentChangeToNextOrder),
-##### wartość poprzedniego zamówienia (PreviousOrderTotal),
-##### wartość następnego zamówienia (NextOrderTotal).
-
-Raport pozwala łatwo prześledzić historię zakupową każdego klienta, zidentyfikować trendy w wartościach zakupów. 
-Kod napisany przez Piotr Leja
-
-
-
 # English
 
 ## Title
@@ -55,3 +27,34 @@ In this querry i am showing chronological sequency of orders for each customer w
 Raport enables to track each customer order history, identify growing or dropping trends in purchased orders
 
 Writted by Piotr Leja
+
+
+
+# Polish
+## Tytuł
+Historia zakupowa klientów z analizą porównawczą zamówień na podstawe ogólnodostępnej bazie danych "Northwind"
+
+## Opis
+W tym zadaniu przygotowałem raport przedstawiający chronologiczną sekwencję zamówień każdego klienta wraz z wartością zamówień oraz analizą ich zmian w odniesieniu do poprzednich i następnych zakupów.
+
+## Techniki
+##### LAG -  Zwraca łączną wartość poprzedniego zamówienia złożonego przez tego samego klienta
+##### LEAD - Zwraca łączną wartość następnego zamówienia złożonego przez tego samego klienta
+##### COALESCE - Zastępuje wartości "NUL"L zwracane przez funkcje "LAG" i "LEAD"
+##### ROUND - Zaokrągla wartości zwracane przez funkcje "LAG" i "LEAD"
+##### CAST - Umożliwia łączenie wartości liczbowych z etykietami tekstowymi wewnątrz funkcji "COALESCE"
+
+
+## Kolumny
+##### całkowita wartość zamówienia (OrderTotal),
+##### data zamówienia (OrderDate),
+##### procentowa zmiana w stosunku do poprzedniego zamówienia (PercentChangeFromPreviousOrder),
+##### procentowa zmiana w stosunku do następnego zamówienia (PercentChangeToNextOrder),
+##### wartość poprzedniego zamówienia (PreviousOrderTotal),
+##### wartość następnego zamówienia (NextOrderTotal).
+
+Raport pozwala łatwo prześledzić historię zakupową każdego klienta, zidentyfikować trendy w wartościach zakupów. 
+Kod napisany przez Piotr Leja
+
+
+
