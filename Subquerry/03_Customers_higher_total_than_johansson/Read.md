@@ -28,7 +28,7 @@ Data is sorted from highetst sum of ordest.
 Writted by Piotr Leja
 
 
-#Polish
+# Polish
 
 ## Tytuł
 Analiza klientów o wyższej wartości zakupów niż klient “Johansson”  w bazie danych (Chinook)
