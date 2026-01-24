@@ -41,3 +41,26 @@ Opis Działania zapytania
 
 Projekt SQL wykonany jako część portfolio analityka danych.
 Autor: Piotr Leja
+
+
+
+# English
+
+## Title
+Product order value analysis in the Northwind databa
+
+## Description:
+Return product list with:
+##### name of category
+##### name of supplier
+##### total number of pieces sold
+##### average price of product
+
+Only return products that sold more than the average number of units sold across all products.
+Divide results on 3 pages. Every page has to contain 10  records
+
+## Tables used in Query:
+
+## Techniques used in this Query:
+
+## Result
