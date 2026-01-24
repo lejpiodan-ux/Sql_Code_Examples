@@ -5,11 +5,12 @@
 Products Analysis with low frequency orders.
 Used Database : Northwind
 
-The goal of this query was to find products which are selling less often than average number of orders for all products, and then identify customers who purchased them.
 
 ## Description:
+The goal of this query was to find products which are selling less often than average number of orders for all products, and then identify customers who purchased them.
 
-Tables used in Query:
+
+## Tables used in query
 
 ##### "Products"
 ##### "Order Details"
@@ -38,10 +39,11 @@ Writted By Piotr Leja
 ## Tytuł
 Analiza produktów o niskiej częstotliwości zamówień Ogólnodostępnej bazy danych (Northwind)
 
+## Opis
 Cel analizy Celem tego zapytania było znalezienie produktów, które sprzedają się rzadziej niż średnia liczba zamówień wszystkich produktów, a następnie zidentyfikowanie klientów, którzy je kupują.
 
-## Opis
-Opis rozwiązania W zapytaniu wykorzystano tabele:
+
+## Wykorzystane tabele
 
 ##### "Products"
 ##### "Order Details"
