@@ -11,17 +11,17 @@ The goal of this query was to find products which are selling less often than av
 
 Tables used in Query:
 
-"Products"
-"Order Details"
-"Orders"
-"Customers"
+##### "Products"
+##### "Order Details"
+##### "Orders"
+##### "Customers"
 
 ## Techniques used in this Query:
 
-"Inner Join" - To connect data
-"Count" and "Average" - To make aggregations
-"Subquerry" - In HAVING clause
-"Offset" and "Fetch" - For Pagination
+##### "Inner Join" - To connect data
+##### "Count" and "Average" - To make aggregations
+##### "Subquerry" - In HAVING clause
+##### "Offset" and "Fetch" - For Pagination
 
 ## Result
 
@@ -43,18 +43,18 @@ Cel analizy Celem tego zapytania było znalezienie produktów, które sprzedają
 ## Opis
 Opis rozwiązania W zapytaniu wykorzystano tabele:
 
-`Products`
-`Order Details`
-`Orders`
-`Customers`
+##### `Products`
+##### `Order Details`
+##### `Orders`
+##### `Customers`
 
 ## Techniki
 
-`INNER JOIN `do połączenia danych,
-` COUNT()` i `AVG()` do obliczeń agregujących,
-podzapytanie  `(subquery) ` w klauzuli HAVING,
-sortowanie wyników malejąco po liczbie zamówień.
-` OFFSET` i `FETCH `do paginacji.
+##### `INNER JOIN `do połączenia danych,
+##### ` COUNT()` i `AVG()` do obliczeń agregujących,
+##### podzapytanie  `(subquery) ` w klauzuli HAVING,
+##### sortowanie wyników malejąco po liczbie zamówień.
+##### ` OFFSET` i `FETCH `do paginacji.
   
 ## Rezultat 
 Zapytanie zwraca listę 100 produktów i klientów, którzy kupują towary zamawiane rzadziej niż średnia liczba zamówień w całej bazie.
