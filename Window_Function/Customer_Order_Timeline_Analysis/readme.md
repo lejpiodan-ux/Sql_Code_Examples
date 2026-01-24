@@ -1,28 +1,57 @@
-Historia zakupowa klientów z analizą porównawczą zamówień na podstawe ogólnodostępnej bazie danych `northwind`
+# Polish
+## Tytuł
+Historia zakupowa klientów z analizą porównawczą zamówień na podstawe ogólnodostępnej bazie danych "Northwind"
 
+## Opis
 W tym zadaniu przygotowałem raport przedstawiający chronologiczną sekwencję zamówień każdego klienta wraz z wartością zamówień oraz analizą ich zmian w odniesieniu do poprzednich i następnych zakupów.
-Wykorzystane funkcje:
-`LAG`,
-`LEAD,` 
-`COALESCE`,
-`ROUND`,
-`CAST`,
-`OVER(PARTITION BY … ORDER BY …)`,
-`LEFT JOIN`, 
-`ORDER BY`
 
-Funkcje `LAG`oraz LEAD pozwalają pobrać wartość poprzedniego i następnego zamówienia w obrębie tego samego klienta, dzięki czemu mogłem
-obliczyć procentową zmianę wartości zamówienia w stosunku do wcześniejszych i kolejnych zakupów.
-Funkcja `COALESCE `umożliwiła zastąpienie wartości NULL odpowiednimi komunikatami
-('First Order' lub 'No Next Order') w przypadku, gdy klient nie miał poprzedniego lub następnego zamówienia. 
-W wyniku otrzymujemy raport, który pokazuje:
+## Techniki
+##### LAG -  Zwraca łączną wartość poprzedniego zamówienia złożonego przez tego samego klienta
+##### LEAD - Zwraca łączną wartość następnego zamówienia złożonego przez tego samego klienta
+##### COALESCE - Zastępuje wartości "NUL"L zwracane przez funkcje "LAG" i "LEAD"
+##### ROUND - Zaokrągla wartości zwracane przez funkcje "LAG" i "LEAD"
+##### CAST - Umożliwia łączenie wartości liczbowych z etykietami tekstowymi wewnątrz funkcji "COALESCE"
 
-całkowitą wartość zamówienia (OrderTotal),
-datę zamówienia (OrderDate),
-procentową zmianę w stosunku do poprzedniego zamówienia (PercentChangeFromPreviousOrder),
-procentową zmianę w stosunku do następnego zamówienia (PercentChangeToNextOrder),
-wartość poprzedniego zamówienia (PreviousOrderTotal),
-wartość następnego zamówienia (NextOrderTotal).
 
-Raport pozwala łatwo prześledzić historię zakupową każdego klienta, zidentyfikować trendy w zamówieniach oraz zauważyć znaczące wzrosty lub spadki w wartościach zakupów. 
-Kod napisany przez Piotr leja
+## Kolumny
+##### całkowita wartość zamówienia (OrderTotal),
+##### data zamówienia (OrderDate),
+##### procentowa zmiana w stosunku do poprzedniego zamówienia (PercentChangeFromPreviousOrder),
+##### procentowa zmiana w stosunku do następnego zamówienia (PercentChangeToNextOrder),
+##### wartość poprzedniego zamówienia (PreviousOrderTotal),
+##### wartość następnego zamówienia (NextOrderTotal).
+
+Raport pozwala łatwo prześledzić historię zakupową każdego klienta, zidentyfikować trendy w wartościach zakupów. 
+Kod napisany przez Piotr Leja
+
+
+
+# English
+
+## Title
+Customer order Timeline Analisys
+
+## Description
+In this querry i am showing chronological sequency of orders for each customer with value of orders and with their changes in reference to previous and next purchase
+
+## Techniques used in this querry
+
+##### LAG - Returns the total value of the previous order placed by the same customer
+##### LEAD - Returns the total value of the next order placed by the same custome
+##### COALESCE- Replaces "NULL" values returned by "LEAD" and "LAG"
+##### ROUND - Rounds values returned from "LEAD" and "LAG"
+##### CAST - Allows combining numeric values with textual labels inside "COALESCE"
+
+## Columns
+##### Total order value (OrderTotal)
+##### Order date (Orderdate)
+##### Percentage change in reference to previous order (PercentChangeFromPreviousOrder)
+##### Percentage change in reference to next order (PercentChangeToNextOrder)
+##### Value of previous order (PreviousOrderTotal)
+##### Value of next order (NextOrderTotal)
+
+## Results
+
+Raport enables to track each customer order history, identify growing or dropping trends in purchased orders
+
+Writted by Piotr Leja
