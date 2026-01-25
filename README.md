@@ -15,6 +15,7 @@ because there is no need to have more folders.
 
 
 Sql server name : Microsoft SQL Server Menagement Studio
+
 Databases: 
 * Northwind
 * Chinook
