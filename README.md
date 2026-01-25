@@ -1,4 +1,4 @@
-### Welcome to my SQL- scripts section!
+# Welcome to my SQL- scripts section!
 ##### This is the place where I am tracking my sql progress.
 
 ### I have 2 folders with some querries writted by me.
