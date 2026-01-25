@@ -12,3 +12,10 @@
 Some latest folders contains combined different sql techniques, for example folder dedicated
 to Window Function may include some Cte's or Subquerry. I didnt create another folder for this, like: Common Table Expressions folder
 because there is no need to have more folders.
+
+
+Sql server name : Microsoft SQL Server Menagement Studio
+Databases: 
+* Northwind
+* Chinook
+* Adventureworks2017
