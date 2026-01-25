@@ -14,7 +14,7 @@ to Window Function may include some Cte's or Subquerry. I didnt create another f
 because there is no need to have more folders.
 
 
-Sql server name : Microsoft SQL Server Menagement Studio
+Sql server name : Microsoft SQL Server Management Studio
 
 Databases: 
 * Northwind
