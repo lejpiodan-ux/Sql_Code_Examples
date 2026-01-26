@@ -7,18 +7,18 @@ Order Analysis with Window Functions
 Used database: Northwind
 
 ## Description 
-In this Query i calculated total values for each order, including discounts. I also compared it with previous order of same customer
+In this Query i calculated total values for each order, including discounts. I also compared it with the previous order of the same customer
 
 ## Techniques used in this query:
-##### "LAG" - Let me take the value from previous order for the same customer 
+##### "LAG" - Let me take the value from the previous order for the same customer 
 ##### "COALESCE" - Is responsible for changing all Nulls into "0"
-##### "ABS" - Gives me absolute value, becouse i dont want to have minus signs in  my querry
+##### "ABS" - Gives me absolute value, becouse i dont want to have minus signs in  my query
 
 ## Result
 
-Raport is showing how much money customer spend on order and  what is the difference between this and previous order bought by the same customer.
+Raport is showing how much money customers spend on orders and  what is the difference between this and the previous order bought by the same customer.
 
-Writted by Piotr Leja
+Written by Piotr Leja
 
 # Polish
 ## Tytuł
