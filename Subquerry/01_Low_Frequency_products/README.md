@@ -3,11 +3,11 @@
 
 ## Title
 Products Analysis with low frequency orders.
-Used Database : Northwind
+Used Database: Northwind
 
 
 ## Description:
-The goal of this query was to find products which are selling less often than average number of orders for all products, and then identify customers who purchased them.
+The goal of this query was to find products which are selling less often than the average number of orders for all products, and then identify customers who purchased them.
 
 
 ## Tables used in query
@@ -21,12 +21,12 @@ The goal of this query was to find products which are selling less often than av
 
 ##### "Inner Join" - To connect data
 ##### "Count" and "Average" - To make aggregations
-##### "Subquerry" - In HAVING clause
+##### "Subquery" - In HAVING clause
 ##### "Offset" and "Fetch" - For Pagination
 
 ## Result
 
-Writted Query shows a list of 100 products and customers who are buying products less often than average number of orders in whole database
+Written Query shows a list of 100 products and customers who are buying products less often than the average number of orders in the whole database
 
 Writted By Piotr Leja
 
