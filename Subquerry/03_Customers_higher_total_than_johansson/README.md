@@ -2,30 +2,30 @@
 # English
 
 ## Title
-Analysis of Customers with higher value of shopping than customer named "Johansson"
+Analysis of Customers with a higher value of shopping than the customer named "Johansson"
 Used Database: "Chinook"
 
 ## Description:
-The main goal of this query was to identify customers who have higher total sales (invoice total) than sum of all orders by customer named "Johansson"
+The main goal of this query was to identify customers who have higher total sales (invoice total) than the sum of all orders by the customer named "Johansson"
 
 ## Tables used in Query:
 ##### Invoice
 ##### Customer
 
 ## Techniques used in this Query:
-##### Aggregative Subquerry - To calculate total value of orders for Johansson
-##### Subquerry in clause From (derived table) - To calculate order sum per customer
+##### Aggregative Subquery - To calculate the total value of orders for Johansson
+##### Subquery in clause From (derived table) - To calculate order sum per customer
 ##### Inner Join - To connect tables
 ##### Where - With condition responsible for comparing sum values
-##### Order By - To sort results decreasing by value of order
+##### Order By - To sort results in decreasing order by value of order
 
 ## Result
-Nested Subquerry calculates total value od orders by each customer.
-Second Subquerry calculates a sum of orders for customer named "Johansson"
-I am comparing every sum with reference value  -> Final result contain only customers with highest expense
-Data is sorted from highetst sum of ordest.
+The nested subquery calculates the total value of orders by each customer.
+The second subquery calculates the sum of orders for the customer named "Johansson"
+I am comparing every sum with the reference value  -> The final result contains only customers with the highest expense
+Data is sorted from the highest sum of orders.
 
-Writted by Piotr Leja
+Written by Piotr Leja
 
 
 # Polish
