@@ -6,7 +6,7 @@ Average product price analysis
 Used Database: Northwind
 
 ## Description:
-Show name of categories with average product price is higher than average of all products in Northwind Database. Add product value status (expensive, normal, cheap) and today's date
+Show name of categories with an average product price that is higher than the average of all products in the Northwind Database. Add product value status (expensive, normal, cheap) and today's date
 
 ## Tables used in Query:
 ##### "Products"
@@ -15,16 +15,16 @@ Show name of categories with average product price is higher than average of all
 ## Techniques used in this Query:
 
 ##### "INNER JOIN" - To connect tables
-##### "AVG" - To calculate average unit price of products in each category
+##### "AVG" - To calculate the average unit price of products in each category
 ##### "GROUP BY" - to group results by categories
-##### "HAVING" - To compare average prices with global average price of all products
+##### "HAVING" - To compare average prices with the global average price of all products
 ##### "CASE" - To classify category as "Expensive", "Normal", or "Cheap"
-##### "CAST (GET DATE () AS DATE)" - For adding a current data
+##### "CAST (GET DATE () AS DATE)" - For adding current data
 ##### "ORDER BY" - To sort results decreasing by average price
 
 
 ## Result
-Query returns  list of categories with their average unit price, product value status and current data
+Query returns a  list of categories with their average unit price, product value status and current data
 
 Writted By Piotr Leja
 
