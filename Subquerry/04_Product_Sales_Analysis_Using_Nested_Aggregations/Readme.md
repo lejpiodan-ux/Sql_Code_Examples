@@ -1,7 +1,7 @@
 # English
 
 ## Title
-Product order value analysis in the Northwind databa
+Product order value analysis in the Northwind database
 
 ## Description:
 Return product list with:
@@ -11,7 +11,7 @@ Return product list with:
 ##### average price of product
 
 Only return products that sold more than the average number of units sold across all products.
-Divide results on 3 pages. Every page has to contain 10 records
+Divide the results into 3 pages. Every page has to contain 10 records
 
 ## Tables used in Query:
 ##### Products
@@ -21,27 +21,27 @@ Divide results on 3 pages. Every page has to contain 10 records
 
 ## Techniques used in this Query:
 ##### "INNER JOIN" - To connect tables
-##### Nested Subquerry - To calculate value of order id
-##### Agreggations "AVG", "COUNT", "SUM" 
+##### Nested Subquery - To calculate the value of the order id
+##### Aggregations: "AVG", "COUNT", "SUM" 
 ##### "WHERE" - which is filtering data with containing subquerry
 ##### "ORDER BY"- To sort results
 ##### "OFFSET" and "FETCH" - To pagination
 
 ## Result
-1.Nested subquerry is calculating a total value for each "Order Id"
-2.Then data is grouping by "Product Id", becouse i need to:
+1. The nested subquery is calculating a total value for each "Order Id"
+2. Then the data is grouped by "Product Id", because I need to:
 ##### calculate average order price for each product
 ##### calculate order quantity for each product
-3.The main querry is adding:
+3. The main query is adding:
 
 ##### Name of product
 ##### Name of category
 ##### Name of supplier
 
-4.Whole result is filtering. Main querry is returning only products with average value of order highest than average value for single order in whole database
-5.Results are sorted decreasingly and are paginated. ( Querry is returning only third page ( 21-30 last records)
+4. The whole result is filtering. Main query is returning only products with an average value of order higher than the average value for a single order in the whole database
+5. Results are sorted in decreasing order and are paginated. ( Querry is returning only the third page ( 21-30 last records)
 
-Writted by Piotr Leja
+Written by Piotr Leja
 
 
 
