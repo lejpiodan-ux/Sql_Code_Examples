@@ -1,15 +1,15 @@
 # English
 
 ## Title
-Customer order Timeline Analisys
+Customer Order Timeline Analysis
 
 ## Description
-In this querry i am showing chronological sequency of orders for each customer with value of orders and with their changes in reference to previous and next purchase
+In this query, I am showing the chronological sequence of orders for each customer, with the value of orders and with their changes in reference to previous and next purchase
 
-## Techniques used in this querry
+## Techniques used in this query
 
 ##### LAG - Returns the total value of the previous order placed by the same customer
-##### LEAD - Returns the total value of the next order placed by the same custome
+##### LEAD - Returns the total value of the next order placed by the same customer
 ##### COALESCE- Replaces "NULL" values returned by "LEAD" and "LAG"
 ##### ROUND - Rounds values returned from "LEAD" and "LAG"
 ##### CAST - Allows combining numeric values with textual labels inside "COALESCE"
@@ -24,9 +24,9 @@ In this querry i am showing chronological sequency of orders for each customer w
 
 ## Results
 
-Raport enables to track each customer order history, identify growing or dropping trends in purchased orders
+Raport enables tracking each customer's order history, identify growing or dropping trends in purchased orders
 
-Writted by Piotr Leja
+Written by Piotr Leja
 
 
 
